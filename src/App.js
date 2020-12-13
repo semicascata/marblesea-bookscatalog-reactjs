@@ -1,17 +1,31 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./components/Home";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
 // scss
 import "./assets/scss/styles.scss";
 
 // redux
 import { Provider } from "react-redux";
+import store from "./redux/store";
 
 const App = () => {
   return (
-    <div>
-      <h1>Wazup</h1>
-    </div>
+    <Provider store={store}>
+      <Router>
+        <Fragment>
+          <Navbar />
+          <div className="container">
+            <Switch>
+              <Route exact path="/" component={Home} />
+            </Switch>
+          </div>
+          <Footer />
+        </Fragment>
+      </Router>
+    </Provider>
   );
 };
 

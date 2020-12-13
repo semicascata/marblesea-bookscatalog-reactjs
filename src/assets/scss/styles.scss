@@ -1,1 +1,59 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+// global styles
+$font-main-title: "Major Mono Display", monospace;
+$font-text: "Playfair Display", serif;
+$font-title: "Amatic SC", cursive;
+$bg-color: #000133;
+$text-color: #d8dcd6;
+$title-color: #fc86aa;
+
+body {
+  text-align: center;
+  background: url("../imgs/library_background.jpg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: $font-text;
+}
+
+h1 {
+  font-family: $font-main-title;
+  color: $title-color;
+}
+
+h2,
+h3,
+h4 {
+  font-family: $font-title;
+  color: $title-color;
+}
+
+.navbar-content {
+  width: 500px;
+  margin: 15px auto;
+}
+
+footer {
+  color: $text-color;
+  font-family: $font-main-title;
+  font-size: 1rem;
+
+  .btn {
+    margin: 5px;
+    font-family: $font-title;
+  }
+}
+
+.img-container {
+  margin: 80px auto;
+
+  img {
+    width: 160px;
+    height: auto;
+  }
+}
