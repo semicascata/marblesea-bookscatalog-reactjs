@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import Register from "./components/authentication/Register";
 
 // scss
 import "./assets/scss/styles.scss";
@@ -20,6 +21,7 @@ const App = () => {
           <div className="container">
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/signup" component={Register} />
             </Switch>
           </div>
           <Footer />

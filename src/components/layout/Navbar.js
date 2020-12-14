@@ -21,18 +21,23 @@ const Navbar = () => {
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" href="!">
+              <Link to="/" className="nav-link">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="!">
+              <Link to="!" className="nav-link">
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="!">
+              <Link to="!" className="nav-link">
                 Library
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/signup" className="nav-link">
+                Sign Up
               </Link>
             </li>
           </ul>

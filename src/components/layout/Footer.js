@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="fixed-bottom">
+    <footer className="footer sticky fixed-bottom">
       <div className="cardMe">
         <i className="fas fa-envelope"></i> raulduarte94@hotmail.com <br />
         <i className="fas fa-phone"></i> +55 (41) 9 9700-2285 <br />

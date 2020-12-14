@@ -13,12 +13,19 @@ $bg-color: #000133;
 $text-color: #d8dcd6;
 $title-color: #fc86aa;
 
+// main stuff
 body {
   text-align: center;
-  background: url("../imgs/library_background.jpg");
-  -webkit-background-clip: text;
-  background-clip: text;
+  background: url("../imgs/library_background.jpg") no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: $font-text;
+}
+
+.container {
+  margin-bottom: 160px;
 }
 
 h1 {
@@ -33,15 +40,19 @@ h4 {
   color: $title-color;
 }
 
+// navbar
 .navbar-content {
   width: 500px;
   margin: 15px auto;
 }
 
+// footer
 footer {
   color: $text-color;
   font-family: $font-main-title;
   font-size: 1rem;
+  position: fixed;
+  bottom: 0;
 
   .btn {
     margin: 5px;
@@ -49,11 +60,30 @@ footer {
   }
 }
 
+// home page
 .img-container {
   margin: 80px auto;
 
   img {
-    width: 160px;
+    width: 150px;
     height: auto;
   }
+}
+
+// auth - login/register
+.card {
+  margin: 60px auto;
+  width: 350px;
+  box-shadow: 15px 15px 30px #363636;
+}
+
+form {
+  padding: 10px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.auth-title {
+  text-align: center;
+  padding: 10px;
 }
